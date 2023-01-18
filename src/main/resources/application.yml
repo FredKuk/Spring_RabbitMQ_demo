@@ -1,0 +1,17 @@
+spring:
+    rabbitmq:
+        host: localhost
+        port: 5672
+        username: guest
+        password: guest
+rabbitmq:
+    queue:
+        name: hippo
+        json:
+            name: hippo_json
+    exchange:
+        name: hippo_exchange
+    routing:
+        key: hippo_routing_key
+        json:
+            key: hippo_routing_json_key
